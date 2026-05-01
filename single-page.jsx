@@ -111,7 +111,7 @@ function AboutSection() {
           </div>
           <div className="sp-cta-row">
             <a className="btn-primary" href="#projects">View work</a>
-            <a className="btn-ghost" href="assets/Katyani-Singh-CV.pdf" download>Download CV</a>
+            <a className="btn-ghost" href="assets/Katyani_Singh_CV.pdf" download>Download CV</a>
             <a className="btn-ghost" href="#contact">Get in touch</a>
           </div>
         </div>
