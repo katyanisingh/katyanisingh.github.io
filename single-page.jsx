@@ -1,5 +1,4 @@
-/* Single-page scrollable site for Katyani Singh
-   Soft pink editorial — Kylie Cosmetics inspired */
+/* Single-page scrollable site for Katyani Singh */
 const { useState, useEffect, useRef } = React;
 
 const SECTIONS = [
