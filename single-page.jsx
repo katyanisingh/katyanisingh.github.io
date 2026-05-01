@@ -129,7 +129,6 @@ function AboutSection() {
         <div><div className="qs-num">5+</div><div className="qs-lbl">Years research</div></div>
         <div><div className="qs-num">2+</div><div className="qs-lbl">Years industry</div></div>
         <div><div className="qs-num">4.0</div><div className="qs-lbl">PhD GPA</div></div>
-        {/* <div><div className="qs-num">4</div><div className="qs-lbl">Publications</div></div> */}
       </div>
     </section>);
 
