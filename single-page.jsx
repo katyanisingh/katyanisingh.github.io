@@ -140,7 +140,7 @@ function ResearchSection() {
   'Vision-Language Models', 'AI Fairness', 'AI Safety', 'Trustworthy ML',
   'Distributionally Robust Optimization', 'Generative Models',
   'Representation Learning', 'Interpretability', 'Synthetic Data & Privacy',
-  'Deep Reinforcement Learning'];
+  'Reinforcement Learning'];
 
   return (
     <section id="research" className="sp-section">
