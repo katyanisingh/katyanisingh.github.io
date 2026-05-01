@@ -265,10 +265,13 @@ mark.stat {
 .sp-portrait-frame {
   position: relative;
   background: var(--bg-2);
+  border-radius: 50%;
+  overflow: hidden;
+   
 }
 .sp-portrait {
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 1/1;
   object-fit: cover;
   display: block;
   filter: contrast(1.02) saturate(1.05);
