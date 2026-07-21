@@ -88,7 +88,7 @@ function AboutSection() {
             <em>Singh</em>
           </h1>
          <p className="sp-tag">
-  Building trustworthy vision-language AI through fairness-aware optimization and representation learning.
+  Building trustworthy multimodal AI through optimization and representation learning.
 </p>
 
 <div className="sp-bio">
