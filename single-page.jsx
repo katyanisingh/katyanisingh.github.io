@@ -87,27 +87,32 @@ function AboutSection() {
             Katyani<br />
             <em>Singh</em>
           </h1>
-          <p className="sp-tag">Building fairness, safety and robustness into vision-language models, as structural properties of representation.
+         <p className="sp-tag">
+  Building trustworthy vision-language AI through fairness-aware optimization and representation learning.
+</p>
 
+<div className="sp-bio">
+  <p>
+    I'm a PhD researcher in Computing Science at the
+    <a href="https://ualberta.ca" target="_blank" rel="noopener"> University of Alberta</a> and the
+    <a href="https://www.amii.ca/" target="_blank" rel="noopener"> Alberta Machine Intelligence Institute (Amii)</a>,
+    advised by
+    <a href="https://webdocs.cs.ualberta.ca/~nidhih/" target="_blank" rel="noopener"> Dr. Nidhi Hegde</a>.
+    My research develops the next generation of <em>trustworthy vision-language models</em> by making
+    <em> fairness, robustness, and safety</em> intrinsic properties of learned representations rather than
+    behaviors corrected after deployment.
+  </p>
 
-          </p>
-          <div className="sp-bio">
-            <p>
-              I'm a PhD student in Computing Science at the
-              <a href="https://ualberta.ca" target="_blank" rel="noopener"> University of Alberta</a> and <a href="https://www.amii.ca/" target="_blank" rel="noopener">Alberta Machine Intelligence Institute</a>,
-              advised by <a href="https://webdocs.cs.ualberta.ca/~nidhih/" target="_blank" rel="noopener">Nidhi Hegde</a>.
-              My research builds <em>fairness, safety, and robustness</em> into
-              vision-language models at training time, as structural properties
-              of representation.
-            </p>
-            <p>
-              I bring <strong>5+ years of research experience</strong> across academia and
-              industry, including <strong>~2 years as a Computer Vision Scientist at <a href="https://www.nextech3d.ai/" target="_blank" rel="noopener">Nextech3D.ai</a></strong>{' '}
-              building diffusion-based virtual photography and image-to-3D pipelines into
-              production e-commerce. Previously, I completed an MSc thesis on unpaired image-to-image translation
-              for OCR with <a href="https://webdocs.cs.ualberta.ca/~nray1/" target="_blank" rel="noopener">Nilanjan Ray</a>.
-            </p>
-          </div>
+  <p>
+    I bring <strong>5+ years of AI research experience</strong> across academia and industry, including
+    <strong> 2 years as a Computer Vision Scientist at
+    <a href="https://www.nextech3d.ai/" target="_blank" rel="noopener"> Nextech3D.ai</a></strong>,
+    where I developed and deployed diffusion, vision-language, and image-to-3D systems for production-scale
+    e-commerce. Previously, I completed my MSc under
+    <a href="https://webdocs.cs.ualberta.ca/~nray1/" target="_blank" rel="noopener"> Dr. Nilanjan Ray</a>,
+    developing an unsupervised document restoration framework that significantly improved OCR performance.
+  </p>
+</div>
           <div className="sp-cta-row">
             <a className="btn-primary" href="#projects">View work</a>
             <a className="btn-ghost" href="assets/Katyani_Singh_CV.pdf" download>Download CV</a>
