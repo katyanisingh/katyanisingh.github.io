@@ -121,7 +121,7 @@ function AboutSection() {
         </div>
         <div className="sp-portrait-wrap">
           <div className="sp-portrait-frame">
-            <img src="assets/katyani-portrait.jpg" alt="Katyani Singh" className="sp-portrait" />
+            <img src="assets/katyani-portrait.png" alt="Katyani Singh" className="sp-portrait" />
           </div>
           <div className="sp-portrait-caption">
             <span></span>
