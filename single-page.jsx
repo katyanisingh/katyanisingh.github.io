@@ -3,13 +3,14 @@ const { useState, useEffect, useRef } = React;
 
 const SECTIONS = [
 { id: 'about', label: 'About' },
+{ id: 'awards', label: 'Awards' },
 { id: 'research', label: 'Research' },
+{ id: 'honours', label: 'Honours' },
 { id: 'projects', label: 'Projects' },
 { id: 'publications', label: 'Publications' },
 { id: 'ongoing', label: 'Ongoing' },
 { id: 'industry', label: 'Industry' },
 { id: 'teaching', label: 'Teaching' },
-{ id: 'honours', label: 'Honours' },
 { id: 'contact', label: 'Contact' }];
 
 
@@ -114,12 +115,6 @@ function AboutSection() {
     developing an unsupervised document restoration framework that significantly improved OCR performance.
   </p>
 
-  <p>
-    In the first year of my PhD, I co-authored an <strong>oral presentation at ACM FAccT 2026</strong>,
-    first-authored a <strong>NeurIPS 2026 AI4Good workshop</strong> paper, and was selected as a reviewer
-    for ACM FAccT 2027. In 2026 I received three nomination-only graduate scholarships and was selected
-    for the <a href="https://www.siliconvalleyfellowship.com/" target="_blank" rel="noopener">Silicon Valley Fellowship</a>.
-  </p>
 </div>
           <div className="sp-cta-row">
             <a className="btn-primary" href="#projects">View work</a>
@@ -663,6 +658,20 @@ function CvRows({ rows }) {
   );
 }
 
+function AwardsSection() {
+  return (
+    <section id="awards" className="sp-section">
+      <header className="sp-section-head">
+        <div className="eyebrow">AWARDS</div>
+        <h2>Awards &amp; <em>fellowships</em></h2>
+      </header>
+      <div className="cv-block">
+        <CvRows rows={AWARDS} />
+      </div>
+    </section>);
+
+}
+
 function HonoursSection() {
   return (
     <section id="honours" className="sp-section">
@@ -673,10 +682,6 @@ function HonoursSection() {
       <div className="cv-block">
         <h3>Education</h3>
         <CvRows rows={EDUCATION} />
-      </div>
-      <div className="cv-block">
-        <h3>Awards &amp; fellowships</h3>
-        <CvRows rows={AWARDS} />
       </div>
       <div className="cv-block">
         <h3>Presentations &amp; service</h3>
@@ -729,13 +734,14 @@ function App() {
       <StickyNav active={active} />
       <main className="sp-main">
         <AboutSection />
+        <AwardsSection />
         <ResearchSection />
+        <HonoursSection />
         <ProjectsSection />
         <PublicationsSection />
         <OngoingSection />
         <IndustrySection />
         <TeachingSection />
-        <HonoursSection />
         <ContactSection />
       </main>
       <SiteTweaks />
