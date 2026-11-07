@@ -672,9 +672,9 @@ function AwardsSection() {
 
 }
 
-function HonoursSection() {
+function EducationSection() {
   return (
-    <section id="honours" className="sp-section">
+    <section id="education" className="sp-section">
       <header className="sp-section-head">
         <div className="eyebrow">EDUCATION</div>
         <h2>Education </h2>
@@ -736,7 +736,7 @@ function App() {
         <AboutSection />
         <AwardsSection />
         <ResearchSection />
-        <HonoursSection />
+        <EducationSection />
         <ProjectsSection />
         <PublicationsSection />
         <OngoingSection />
