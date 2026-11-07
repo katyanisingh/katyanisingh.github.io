@@ -9,6 +9,7 @@ const SECTIONS = [
 { id: 'ongoing', label: 'Ongoing' },
 { id: 'industry', label: 'Industry' },
 { id: 'teaching', label: 'Teaching' },
+{ id: 'honours', label: 'Honours' },
 { id: 'contact', label: 'Contact' }];
 
 
@@ -104,13 +105,20 @@ function AboutSection() {
   </p>
 
   <p>
-    I bring <strong>5+ years of AI research experience</strong> across academia and industry, including
-    <strong> 2 years as a Computer Vision Scientist at
-    <a href="https://www.nextech3d.ai/" target="_blank" rel="noopener"> Nextech3D.ai</a></strong>,
-    where I developed and deployed diffusion, vision-language, and image-to-3D systems for production-scale
-    e-commerce. Previously, I completed my MSc under
+    I bring <strong>5+ years of experience in machine learning and computer vision</strong>, including
+    <strong> 2.5+ years in industry</strong> as a Machine Learning / Computer Vision Scientist at
+    <a href="https://www.nextech3d.ai/" target="_blank" rel="noopener"> Nextech3D.ai</a> and a Computer Vision
+    Researcher at AI startups, where I built and deployed latent diffusion, NeRF, vision-language, and
+    contrastive retrieval systems for production-scale e-commerce. Previously, I completed my MSc under
     <a href="https://webdocs.cs.ualberta.ca/~nray1/" target="_blank" rel="noopener"> Dr. Nilanjan Ray</a>,
     developing an unsupervised document restoration framework that significantly improved OCR performance.
+  </p>
+
+  <p>
+    In the first year of my PhD, I co-authored an <strong>oral presentation at ACM FAccT 2026</strong>,
+    first-authored a <strong>NeurIPS 2026 AI4Good workshop</strong> paper, and was selected as a reviewer
+    for ACM FAccT 2027. In 2026 I received three nomination-only graduate scholarships and was selected
+    for the <a href="https://www.siliconvalleyfellowship.com/" target="_blank" rel="noopener">Silicon Valley Fellowship</a>.
   </p>
 </div>
           <div className="sp-cta-row">
@@ -132,7 +140,7 @@ function AboutSection() {
 
      <div className="sp-quick-stats" style={{ maxWidth: '600px', margin: '5rem auto 0' }}>
   <div><div className="qs-num">5+</div><div className="qs-lbl">Years research</div></div>
-  <div><div className="qs-num">2+</div><div className="qs-lbl">Years industry</div></div>
+  <div><div className="qs-num">2.5+</div><div className="qs-lbl">Years industry</div></div>
   <div><div className="qs-num">4.0</div><div className="qs-lbl">PhD GPA</div></div>
   </div>
     </section>);
@@ -142,7 +150,7 @@ function AboutSection() {
 /* ============ RESEARCH ============ */
 function ResearchSection() {
   const interests = [
-  'Vision-Language Models', 'AI Fairness', 'AI Safety', 'Trustworthy ML',
+  'Vision-Language Models', 'Multimodal AI', 'AI Fairness', 'AI Safety', 'AI Alignment', 'Trustworthy ML',
   'Distributionally Robust Optimization', 'Generative Models',
   'Representation Learning', 'Interpretability', 'Synthetic Data & Privacy',
   'Reinforcement Learning'];
@@ -265,7 +273,27 @@ function PublicationsSection() {
 
       <ExpandCard
         summary={<>
-          <div className="pub-venue">arXiv · 2026 · Preprint</div>
+          <div className="pub-venue">NeurIPS 2026 · AI4Good Workshop · Poster</div>
+          <h3 className="pub-title">Nonlinear Bias Survival after Post-Hoc Debiasing of Vision-Language Representations</h3>
+          <div className="pub-authors">K. Singh, N. Hegde</div>
+        </>}>
+        <p>
+          Post-hoc debiasing of vision-language models has relied on linear methods that model
+          demographic bias as a subspace of the embedding space. This work replicates Subspace
+          Projection Debiasing (SPD) and Selective Feature Imputation (SFID) on CLIP FairFace
+          embeddings and shows, via nonlinear residual probing, that substantial <em>nonlinear</em>{' '}
+          bias survives linear post-hoc debiasing.
+        </p>
+        <div className="pub-tags">
+          <span className="tag">VLMs</span><span className="tag">Fairness</span>
+          <span className="tag">CLIP</span><span className="tag">Debiasing</span>
+          <span className="tag">Probing</span>
+        </div>
+      </ExpandCard>
+
+      <ExpandCard
+        summary={<>
+          <div className="pub-venue">ACM FAccT · 2026 · Oral presentation</div>
           <h3 className="pub-title">RobustDebias: Debiasing Language Models using Distributionally Robust Optimization</h3>
           <div className="pub-authors">D. Gandhi, K. Singh, N. Hegde</div>
         </>}>
@@ -278,6 +306,7 @@ function PublicationsSection() {
           <span className="tag">LLMs</span><span className="tag">Fairness</span>
           <span className="tag">DRO</span><span className="tag">Debiasing</span>
         </div>
+        <a className="pub-link" href="https://dl.acm.org/doi/10.1145/3805689.3812330" target="_blank" rel="noopener">ACM Digital Library ↗</a>{' '}
         <a className="pub-link" href="https://arxiv.org/abs/2602.00405" target="_blank" rel="noopener">arXiv:2602.00405 ↗</a>
       </ExpandCard>
 
@@ -297,7 +326,7 @@ function PublicationsSection() {
           <span className="tag">CycleGAN</span><span className="tag">BiLSTM</span>
           <span className="tag">OCR</span><span className="tag">Unpaired</span>
         </div>
-        <a className="pub-link" href="https://link.springer.com/journal/10032" target="_blank" rel="noopener">International Journal on Document Analysis and Recognition (IJDAR) ↗</a>
+        <a className="pub-link" href="https://link.springer.com/article/10.1007/s10032-024-00499-2" target="_blank" rel="noopener">International Journal on Document Analysis and Recognition (IJDAR) ↗</a>
       </ExpandCard>
 
       <ExpandCard
@@ -335,6 +364,7 @@ function PublicationsSection() {
           <span className="tag">CNNs</span><span className="tag">Image Enhancement</span>
           <span className="tag">Survey</span>
         </div>
+        <a className="pub-link" href="https://ieeexplore.ieee.org/abstract/document/8878706" target="_blank" rel="noopener">IEEE Xplore ↗</a>
       </ExpandCard>
     </section>);
 
@@ -356,23 +386,20 @@ function OngoingSection() {
       <ExpandCard
         summary={<>
           <div className="pub-venue">In progress · 2026</div>
-          <h3 className="pub-title">Beyond Linear Debiasing: Kernel-Space Subspace Projection for VLMs</h3>
+          <h3 className="pub-title">Geometric Flow for Nonlinear Debiasing of Vision-Language Embeddings</h3>
           <div className="pub-authors">K. Singh</div>
         </>}>
-        
+
         <p>
-          Post-hoc debiasing of vision-language models has relied on linear methods
-          that model demographic bias as a subspace of the embedding space. This work
-          (i) replicates Subspace Projection Debiasing (SPD) and Selective Feature
-          Imputation (SFID) on CLIP ViT-B/32 FairFace embeddings; (ii) shows via
-          MLP residual probing that substantial <em>non-linear</em> bias survives
-          SPD; and (iii) introduces <strong>Kernel SPD</strong>, lifting embeddings
-          into a Nyström feature space before applying the SPD pipeline.
+          A geometric flow framework for debiasing CLIP embeddings that models demographic
+          bias as a <em>differentiable scalar field</em> over the embedding manifold. Inspired
+          by score-based diffusion and classifier guidance, the method continuously transports
+          embeddings toward fair regions while preserving semantic structure and manifold geometry.
         </p>
         <div className="pub-tags">
           <span className="tag">VLMs</span><span className="tag">Fairness</span>
-          <span className="tag">Kernel Methods</span><span className="tag">CLIP</span>
-          <span className="tag">Debiasing</span>
+          <span className="tag">Geometric Flow</span><span className="tag">CLIP</span>
+          <span className="tag">Score-based Diffusion</span>
         </div>
       </ExpandCard>
 
@@ -388,7 +415,8 @@ function OngoingSection() {
           gradient-based uncertainty quantification (NeuralTS, NeuralUCB). We propose
           <strong> NE-TS</strong> and <strong>NE-UCB</strong>: simpler algorithms using
           ensembles of neural networks trained via bootstrap resampling, where ensemble
-          diversity itself captures epistemic uncertainty.
+          diversity itself captures epistemic uncertainty. A comprehensive empirical evaluation
+          characterizes the computational-performance tradeoffs for contextual bandit applications.
         </p>
         <div className="pub-tags">
           <span className="tag">Contextual Bandits</span><span className="tag">Ensembles</span>
@@ -416,6 +444,24 @@ function IndustrySection() {
       <div className="industry-card">
         <div className="industry-head">
           <div>
+            <div className="industry-role">AI Career Accelerator Participant</div>
+            <div className="industry-company">
+              <a href="https://www.amii.ca/" target="_blank" rel="noopener">Alberta Machine Intelligence Institute (Amii)</a>
+              <span className="industry-meta"> · Edmonton, AB</span>
+            </div>
+          </div>
+          <div className="industry-dates">Sep 2026 to Present</div>
+        </div>
+        <ul className="impact-list">
+          <li><span><strong>Project Validation.</strong> Supporting the Amii Industry Team in helping client companies scope a business problem into an executable ML project definition, identify viable ML approaches, and understand the associated risks.</span></li>
+          <li><span><strong>Research &amp; client reporting.</strong> Conducting academic and industrial literature reviews, brainstorming ML approaches, participating in client meetings, and preparing slides and documentation integrated into the final client report.</span></li>
+          <li><span><strong>Client Coaching.</strong> Collaborating with Amii startup-team ML scientists as a domain expert, guiding startups through ML adoption: problem identification, evaluation, and proof-of-concept planning and execution.</span></li>
+        </ul>
+      </div>
+
+      <div className="industry-card">
+        <div className="industry-head">
+          <div>
             <div className="industry-role">Machine Learning / Computer Vision Scientist</div>
             <div className="industry-company">
               <a href="https://www.nextech3d.ai/" target="_blank" rel="noopener">Nextech3D.ai</a>
@@ -435,7 +481,25 @@ function IndustrySection() {
       <div className="industry-card">
         <div className="industry-head">
           <div>
-            <div className="industry-role">Graduate Research Assistant</div>
+            <div className="industry-role">Graduate Research Assistantship Fellow (PhD)</div>
+            <div className="industry-company">
+              <a href="https://ualberta.ca" target="_blank" rel="noopener">University of Alberta</a>
+              <span className="industry-meta"> · Edmonton, AB · Supervisor: Dr. Nidhi Hegde</span>
+            </div>
+          </div>
+          <div className="industry-dates">2025 to Present</div>
+        </div>
+        <ul className="impact-list">
+          <li><span><strong>Doctoral research</strong> on fairness, robustness, and transparency in vision-language models.</span></li>
+          <li><span><strong>Principled debiasing.</strong> Developing debiasing methods leveraging distributionally robust optimization (DRO) across multimodal architectures.</span></li>
+          <li><span><strong>First 12 months.</strong> Co-authored an oral presentation at ACM FAccT 2026, first-authored a NeurIPS 2026 workshop paper, and selected as a reviewer for ACM FAccT 2027.</span></li>
+        </ul>
+      </div>
+
+      <div className="industry-card">
+        <div className="industry-head">
+          <div>
+            <div className="industry-role">Graduate Research Assistant (MSc)</div>
             <div className="industry-company">
               <a href="https://ualberta.ca" target="_blank" rel="noopener">University of Alberta</a>
               <span className="industry-meta"> · Edmonton, AB</span>
@@ -511,24 +575,112 @@ function TeachingSection() {
 
       <div className="ta-list">
         <div className="ta-row">
-          <div className="ta-dates">Jan to Apr 2026</div>
+          <div className="ta-dates">Fall 2026</div>
           <div className="ta-courses">
             <div className="ta-course"><strong>CMPUT 200</strong> Ethics of Data Science and Artificial Intelligence</div>
           </div>
         </div>
         <div className="ta-row">
-          <div className="ta-dates">Sep to Dec 2025</div>
+          <div className="ta-dates">Winter 2026</div>
+          <div className="ta-courses">
+            <div className="ta-course"><strong>CMPUT 200</strong> Ethics of Data Science and Artificial Intelligence</div>
+          </div>
+        </div>
+        <div className="ta-row">
+          <div className="ta-dates">Fall 2025</div>
           <div className="ta-courses">
             <div className="ta-course"><strong>CMPUT 566</strong> Introduction to Machine Learning</div>
           </div>
         </div>
         <div className="ta-row">
-          <div className="ta-dates">Sep 2021 to May 2022</div>
+          <div className="ta-dates">Fall 2022</div>
           <div className="ta-courses">
-            <div className="ta-course"><strong>CMPUT 175</strong> Introduction to Foundations of Computation 2</div>
             <div className="ta-course"><strong>CMPUT 101</strong> Introduction to Computing</div>
           </div>
         </div>
+        <div className="ta-row">
+          <div className="ta-dates">Winter 2022</div>
+          <div className="ta-courses">
+            <div className="ta-course"><strong>CMPUT 175</strong> Foundations of Computation 2</div>
+          </div>
+        </div>
+        <div className="ta-row">
+          <div className="ta-dates">Fall 2021</div>
+          <div className="ta-courses">
+            <div className="ta-course"><strong>CMPUT 101</strong> Introduction to Computing</div>
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}
+
+/* ============ HONOURS ============ */
+const EDUCATION = [
+{ yr: '2025 – Present', title: 'PhD, Computing Science', org: 'University of Alberta · Supervisor: Dr. Nidhi Hegde',
+  meta: 'GPA 4.0/4.0, A+ in every graduate course · Thesis focus: Fairness, Optimization, Robustness, and Transparency in Vision-Language Models' },
+{ yr: '2021 – 2023', title: 'MSc, Computing Science (Thesis-based)', org: 'University of Alberta · Supervisor: Dr. Nilanjan Ray',
+  meta: <>GPA 3.9/4.0 · Thesis: <a href="https://era.library.ualberta.ca/items/e60d4100-a101-4dce-b250-6692e3e0508b" target="_blank" rel="noopener">Unsupervised Document Image Denoising for OCR ↗</a> · Funded by Intuit Inc. and NSERC</> },
+{ yr: '2016 – 2020', title: 'BTech, Computer Engineering', org: 'MPSTME, NMIMS University, India',
+  meta: 'Rank 2/120 · First-author IEEE conference paper as an undergraduate' }];
+
+const AWARDS = [
+{ yr: 'Oct 2026', title: 'Verna Tate Graduate Scholarship in Science', org: 'Faculty of Graduate and Postdoctoral Studies, University of Alberta · $11,500',
+  meta: 'Endowed scholarship awarded to one female graduate student per year in Computing Science for superior academic achievement.' },
+{ yr: 'Oct 2026', title: 'Maya and Mangesh Murdeshwar Graduate Award', org: 'Faculty of Graduate and Postdoctoral Studies, University of Alberta · $1,900',
+  meta: 'Awarded to a single female student per year in Computing Science, selected on academic achievement.' },
+{ yr: 'Sep 2026', title: 'Ashley Finlayson and Diane Hollinshead International Graduate Scholarship in Science', org: 'Faculty of Graduate and Postdoctoral Studies, University of Alberta · $1,500',
+  meta: 'Awarded to one international female graduate student per year across Computing Science, Mathematical & Statistical Sciences, and Physics.' },
+{ yr: 'Sep 2026', title: <a href="https://www.siliconvalleyfellowship.com/" target="_blank" rel="noopener">Silicon Valley Fellowship ↗</a>, org: 'San Francisco, CA',
+  meta: 'Week-long immersion with leaders, founders, and researchers from Big Tech and top Bay Area universities. ~2% acceptance from 5,000+ applications per year.' },
+{ yr: 'Jul 2025', title: 'CIFAR Deep Learning + Reinforcement Learning Summer School', org: 'Canadian Institute for Advanced Research (CIFAR)',
+  meta: 'Selected for CIFAR’s flagship AI training program: a cohort of roughly 150–200 trainees chosen from thousands of applicants worldwide.' },
+{ yr: '2020', title: 'Gold Medal, Rank 2 in Department', org: 'MPSTME, NMIMS',
+  meta: 'Graduated 2nd of 120 in Computer Engineering. Also named to the Dean’s Meritorious Students List and received the Student Ambassador Award.' },
+{ yr: 'Mar 2019', title: 'Winner, Smart India Hackathon', org: '$1,500 · 10,000+ participants nationwide',
+  meta: 'Autonomous invoice-processing platform using RPA and deep learning; now under incubation by the Department of Science and Technology, Government of India.' }];
+
+const TALKS = [
+{ yr: '2026', title: 'Selected Poster Presenter, AWS Academic Poster Session', org: 'Grace Hopper Celebration (GHC)',
+  meta: 'Post-hoc AI Debiasing Still Fails Women and Marginalized Groups' },
+{ yr: '2026', title: 'Selected Poster Presenter, AI4Good Workshop', org: 'NeurIPS 2026',
+  meta: 'Nonlinear Bias Survival after Post-Hoc Debiasing of Vision-Language Representations' },
+{ yr: '2026', title: 'Oral Presentation', org: 'ACM FAccT 2026',
+  meta: 'RobustDebias: Debiasing Language Models using Distributionally Robust Optimization' },
+{ yr: '2027', title: 'Selected Reviewer', org: 'ACM Conference on Fairness, Accountability, and Transparency (FAccT)' },
+{ yr: '2026', title: 'Selected Reviewer', org: 'Trustworthy AI for Good Workshop, NeurIPS' }];
+
+function CvRows({ rows }) {
+  return rows.map((r, i) =>
+  <div key={i} className="cv-row">
+      <div className="cv-yr">{r.yr}</div>
+      <div>
+        <div className="cv-title">{r.title}</div>
+        {r.org && <div className="cv-org">{r.org}</div>}
+        {r.meta && <div className="cv-meta">{r.meta}</div>}
+      </div>
+    </div>
+  );
+}
+
+function HonoursSection() {
+  return (
+    <section id="honours" className="sp-section">
+      <header className="sp-section-head">
+        <div className="eyebrow">HONOURS</div>
+        <h2>Education &amp; <em>recognition</em></h2>
+      </header>
+      <div className="cv-block">
+        <h3>Education</h3>
+        <CvRows rows={EDUCATION} />
+      </div>
+      <div className="cv-block">
+        <h3>Awards &amp; fellowships</h3>
+        <CvRows rows={AWARDS} />
+      </div>
+      <div className="cv-block">
+        <h3>Presentations &amp; service</h3>
+        <CvRows rows={TALKS} />
       </div>
     </section>);
 
@@ -583,6 +735,7 @@ function App() {
         <OngoingSection />
         <IndustrySection />
         <TeachingSection />
+        <HonoursSection />
         <ContactSection />
       </main>
       <SiteTweaks />
