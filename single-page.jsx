@@ -5,7 +5,7 @@ const SECTIONS = [
 { id: 'about', label: 'About' },
 { id: 'awards', label: 'Awards' },
 { id: 'research', label: 'Research' },
-{ id: 'honours', label: 'Honours' },
+{ id: 'eduation', label: 'Education' },
 { id: 'projects', label: 'Projects' },
 { id: 'publications', label: 'Publications' },
 { id: 'ongoing', label: 'Ongoing' },
@@ -676,8 +676,8 @@ function HonoursSection() {
   return (
     <section id="honours" className="sp-section">
       <header className="sp-section-head">
-        <div className="eyebrow">HONOURS</div>
-        <h2>Education &amp; <em>recognition</em></h2>
+        <div className="eyebrow">EDUCATION</div>
+        <h2>Education </h2>
       </header>
       <div className="cv-block">
         <h3>Education</h3>
