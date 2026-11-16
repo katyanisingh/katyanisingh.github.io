@@ -378,7 +378,7 @@ function OngoingSection() {
         </p>
       </header>
 
-      <ExpandCard
+      {/* <ExpandCard
         summary={<>
           <div className="pub-venue">In progress · 2026</div>
           <h3 className="pub-title">Geometric Flow for Nonlinear Debiasing of Vision-Language Embeddings</h3>
@@ -396,7 +396,7 @@ function OngoingSection() {
           <span className="tag">Geometric Flow</span><span className="tag">CLIP</span>
           <span className="tag">Score-based Diffusion</span>
         </div>
-      </ExpandCard>
+      </ExpandCard> */}
 
       <ExpandCard
         summary={<>
